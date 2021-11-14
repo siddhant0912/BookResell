@@ -43,7 +43,7 @@ const  App= () => {
               <Route exact path="/books/:id" component={SingleBook}/> 
               <Route exact path= "/owner-info" component={Owner} />
               <PrivateRoute exact path="/add-book" component={BookForm}/>
-              <PrivateRoute exact path="/books/me" component={MyBooks} />
+              <PrivateRoute exact path="/me/books" component={MyBooks} />
             </Switch>
         </section>
       </Fragment>

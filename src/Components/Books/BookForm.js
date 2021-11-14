@@ -22,7 +22,7 @@ const BookForm = ({AddBooks}) =>{
     const onSubmit = e =>{
         e.preventDefault()
         AddBooks(title,author,publisher,genre,price,availability,description,file)
-        history.push('/books')
+        history.push('/me/books')
     }
 
     

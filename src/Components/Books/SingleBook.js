@@ -14,7 +14,7 @@ const SingleBook = ({auth:{loading},getBookById,book}) =>{
     }, [])
     
     if(book !== null){
-        var {title, author, publisher,genre, availabilty, description, owner } = book
+        var {title, author, publisher,genre, availabilty, description } = book
     }else{
         return null
     }

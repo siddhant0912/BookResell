@@ -38,7 +38,7 @@ const NavBar = ({Auth:{isAuthenticated, loading}, logout})=>{
                 </Link>
             </li>
             <li>
-                <Link to="/books/me">
+                <Link to="/me/books">
                     <i className="fas fa-user"></i>{' '}
                     Your Books
                 </Link>

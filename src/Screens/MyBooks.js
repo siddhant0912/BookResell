@@ -1,8 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import BookItem from '../Components/Books/BookItem'
+
 const MyBooks = ({book:{books}, auth:{isAuthenticated, user}}) =>{
     const mybooks = books.filter(book => book.owner === user._id)
+    console.log(books)
 
     return(
         <ol className="books-grid">
@@ -18,5 +20,5 @@ const mapStateToProps = state =>({
     auth: state.Auth
 })
 
-export default connect(mapStateToProps)(MyBooks)
+export default connect(mapStateToProps,{})(MyBooks)
 
